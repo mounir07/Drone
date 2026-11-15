@@ -4,7 +4,7 @@
 #include <Wire.h>
 #include <DIYables_LCD_I2C.h>
 
-#define CE_PIN 5 
+#define CE_PIN 5
 #define CSN_PIN 4
 #define throttle A0
 #define yaw A1
@@ -46,7 +46,7 @@ if(!radio.begin()){
 }else {
   Serial.println("RF ok");
   lcd.setCursor(0, 1);  //  Move the cursor to column 0, row 1 (second row)
-  lcd.print("Radio ok");
+  lcd.print("Radio ok!");
   delay(1000);
   }
    //RF24 settings
